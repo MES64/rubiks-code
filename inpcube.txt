@@ -1,0 +1,21 @@
+#==============================================================================#
+# Solved State: (Note: 0s are for open pieces to list; orientations must be 0) #
+#                                          (E.g. URF = Up, Right, Front piece) #
+#          URF UFL UBR ULB DFR DLF DRB DBL UF UB UR UL FR FL BR BL DF DB DR DL #
+# Perm   | 1   2   3   4   5   6   7   8   9  10 11 12 13 14 15 16 17 18 19 20 #
+# Orient | 0   0   0   0   0   0   0   0   0  0  0  0  0  0  0  0  0  0  0  0  #
+#                                                                              #
+# -Permute pieces only within their own group, either the corner or            #
+# edge group, by swapping numbers with the initial position as reference       #
+# -Orient Corners: O = 0 means no change                                       #
+#                  O = 1 means clockwise twisted                               #
+#                  O = 2 means anti-clockwise twisted                          #
+# -Orient Edges: O = 0 means unflipped                                         #
+#                O = 1 means flipped                                           #
+# -To define original orientation on a solved cube, the stickers on the top    #
+# and bottom faces are used as reference. The middle layer edges have          #
+# reference stickers FL, FR, BL, BR; the front and back facing stickers.       #
+#==============================================================================#
+
+0 0 3 4 5 6 7 8 0 0 11 12 13 14 15 16 17 18 19 20
+0 0 0 0 0 0 0 0 0 0  0  0  0  0  0  0  0  0  0  0
